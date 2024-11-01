@@ -5,6 +5,7 @@
 
 (declare-const x (_ BitVec 8)) ; x :: u8
 
+; to get a literal, N, use `(_ bv[N] [WIDTH])`
 (assert (= (bvmul x (_ bv5 8)) (_ bv1 8))) ; 5x = 1
 
 (check-sat)
